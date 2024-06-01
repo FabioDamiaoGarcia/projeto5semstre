@@ -1,0 +1,38 @@
+-- Banco de dados: id21535433_tecplay
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela usuarios
+--
+
+CREATE TABLE usuarios (
+  codigo int(5) NOT NULL,
+  nome varchar(150) NOT NULL,
+  senha varchar(30) NOT NULL,
+  email varchar(150) NOT NULL,
+  plano varchar(50) NOT NULL,
+  pagamento varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices de tabela usuarios
+--
+ALTER TABLE usuarios
+  ADD PRIMARY KEY (codigo);
+
+--
+-- AUTO_INCREMENT para tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela usuarios
+--
+ALTER TABLE usuarios
+  MODIFY codigo int(5) NOT NULL AUTO_INCREMENT;
+COMMIT;
